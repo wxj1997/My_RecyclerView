@@ -1,5 +1,5 @@
 package com.example.wxj.my_recyclerview;
-
+/*上拉刷新，下拉加载*/
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 

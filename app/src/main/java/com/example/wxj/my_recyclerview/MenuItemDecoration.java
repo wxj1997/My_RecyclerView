@@ -1,5 +1,5 @@
 package com.example.wxj.my_recyclerview;
-
+/*添加下划线*/
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;

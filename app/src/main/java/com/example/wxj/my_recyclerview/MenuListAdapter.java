@@ -1,5 +1,5 @@
 package com.example.wxj.my_recyclerview;
-
+/*显示RecyclerView适配器视图*/
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
