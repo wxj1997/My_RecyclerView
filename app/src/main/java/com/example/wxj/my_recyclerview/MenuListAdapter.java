@@ -78,7 +78,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         TextView tvFootView;
 
         public ViewHolder(View itemView) {
-            super(itemView);//?
+            super(itemView);//调用父类有参构造方法
         /*获取控件对象*/
             menu_image = (ImageView) itemView.findViewById(R.id.menu_image);
             menu_title = (TextView) itemView.findViewById(R.id.menu_title);
