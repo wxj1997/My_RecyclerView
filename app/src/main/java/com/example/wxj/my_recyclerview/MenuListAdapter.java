@@ -93,7 +93,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 }
 /*思路：1.在public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-方法中中通过LayoutInflater.from(parent.getContext()).inflate获取两个xml文件中的资源
+方法中中通过LayoutInflater.from(context).inflate获取两个xml文件中的资源
 2.通过ViewHolder类获取两个xml中的控件对象
 3.在public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)方法中
 中通过VIewHolder设置各种资源使其显示
