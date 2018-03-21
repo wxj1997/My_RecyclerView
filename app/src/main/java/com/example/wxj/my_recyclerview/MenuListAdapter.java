@@ -1,5 +1,6 @@
 package com.example.wxj.my_recyclerview;
 /*显示RecyclerView适配器视图*/
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,7 +36,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         View footView = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.foot_view, parent, false);
         if (viewType == FOOT_TYPE)//?
-            return new ViewHolder(footView);
+            return new ViewHolder(footView);//调用有参构造
         else return new ViewHolder(itemView);
     }
     /*viewType	The view type of the new View.*/
