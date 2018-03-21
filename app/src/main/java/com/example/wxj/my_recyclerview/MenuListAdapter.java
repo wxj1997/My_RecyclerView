@@ -34,11 +34,11 @@ public class MenuListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
        /* Log.i("TAG",viewType+"");*/
 
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.item_view, parent, false);/*inflate()从指定的xml资源中扩充新的视图层次结构*/
+        View itemView = LayoutInflater.from(context).inflate(
+                R.layout.item_view, null);/*inflate()从指定的xml资源中扩充新的视图层次结构*/
 
-        View footView = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.foot_view, parent, false);
+        View footView = LayoutInflater.from(context).inflate(
+                R.layout.foot_view, null);
         if (viewType == FOOT_TYPE)//?
             return new ViewHolder(footView);//调用有参构造
         else return new ViewHolder(itemView);
