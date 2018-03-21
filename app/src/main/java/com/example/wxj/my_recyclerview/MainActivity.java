@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.layout_swipe_refresh);
         mSwipeRefreshLayout.setOnRefreshListener(this);
 
-        /*2.1下拉加载*/
+        /*2.1上拉加载*/
         recyclerView.addOnScrollListener(new MenuOnScrollListener() {
             @Override
             public void lodemore() {
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             mDataList.add(map);
         }
     }
-/*2.2上拉刷新*/
+/*2.2下拉刷新*/
     @Override
     public void onRefresh() {
         mHandler.postDelayed(new Runnable() {
